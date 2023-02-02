@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import Currency from 'react-currency-formatter';
+import Currency from "react-currency-formatter";
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
+//import dispatch hook from react-redux
+import { useDispatch } from "react-redux";
+//import reducer function from the store slice
+import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 
 function Product({ id, title, category, image, price, description }) {
   const Max = 5;
@@ -10,9 +14,32 @@ function Product({ id, title, category, image, price, description }) {
 
   const [hasPrime] = useState(Math.random(Math.random() < 0.5));
 
+  //dispatch
+  const dispatch = useDispatch();
+
+  //variables for cart
+  const items = [];
+
+  //handler functions
+  const addItemToBasket = () => {
+    const product = {
+      id,
+      title,
+      price,
+      description,
+      category,
+      image,
+      hasPrime,
+    };
+    //sending the product as an action to the REDUX store
+    dispatch(addToBasket(product));
+  };
+
   return (
-    <div className="relative flex flex-col m-5 bg-white p-10 z-50"> 
-      <p className="absolute top-2 right-2 text-grey-400 italic text-xs">{category}</p>
+    <div className="relative flex flex-col m-5 bg-white p-10 z-50">
+      <p className="absolute top-2 right-2 text-grey-400 italic text-xs">
+        {category}
+      </p>
       <Image src={image} height={200} width={200} objectfit="certain" />
       <h4 className="my-3">{title}</h4>
       <div className="flex">
@@ -32,7 +59,9 @@ function Product({ id, title, category, image, price, description }) {
           <p className="text-xs text-grey-500">Free Next-day Delivery</p>
         </div>
       )}
-      <button className="">Add to Basket</button>
+      <button onClick={addItemToBasket} className="">
+        Add to Basket
+      </button>
     </div>
   );
 }
