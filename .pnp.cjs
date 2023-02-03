@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:17.0.1"],\
             ["react-redux", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:7.2.9"],\
             ["react-responsive-carousel", "npm:3.2.23"],\
+            ["stripe", "npm:11.8.0"],\
             ["tailwindcss", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:2.2.19"]\
           ],\
           "linkType": "SOFT"\
@@ -5720,6 +5721,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["object-inspect", [\
+        ["npm:1.12.3", {\
+          "packageLocation": "./.yarn/cache/object-inspect-npm-1.12.3-1e7d20f5ff-dabfd824d9.zip/node_modules/object-inspect/",\
+          "packageDependencies": [\
+            ["object-inspect", "npm:1.12.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["object-is", [\
         ["npm:1.1.5", {\
           "packageLocation": "./.yarn/cache/object-is-npm-1.1.5-48a862602b-989b18c4cb.zip/node_modules/object-is/",\
@@ -6418,6 +6428,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["qs", [\
+        ["npm:6.11.0", {\
+          "packageLocation": "./.yarn/cache/qs-npm-6.11.0-caf1bc9dea-6e1f29dd53.zip/node_modules/qs/",\
+          "packageDependencies": [\
+            ["qs", "npm:6.11.0"],\
+            ["side-channel", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["querystring", [\
         ["npm:0.2.1", {\
           "packageLocation": "./.yarn/cache/querystring-npm-0.2.1-15cb60859d-7b83b45d64.zip/node_modules/querystring/",\
@@ -7103,6 +7123,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["side-channel", [\
+        ["npm:1.0.4", {\
+          "packageLocation": "./.yarn/cache/side-channel-npm-1.0.4-e1f38b9e06-351e41b947.zip/node_modules/side-channel/",\
+          "packageDependencies": [\
+            ["side-channel", "npm:1.0.4"],\
+            ["call-bind", "npm:1.0.2"],\
+            ["get-intrinsic", "npm:1.2.0"],\
+            ["object-inspect", "npm:1.12.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["signal-exit", [\
         ["npm:3.0.7", {\
           "packageLocation": "./.yarn/cache/signal-exit-npm-3.0.7-bd270458a3-a2f098f247.zip/node_modules/signal-exit/",\
@@ -7358,6 +7390,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/strip-json-comments-npm-2.0.1-e7883b2d04-1074ccb632.zip/node_modules/strip-json-comments/",\
           "packageDependencies": [\
             ["strip-json-comments", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["stripe", [\
+        ["npm:11.8.0", {\
+          "packageLocation": "./.yarn/cache/stripe-npm-11.8.0-a135523e96-1bebbef915.zip/node_modules/stripe/",\
+          "packageDependencies": [\
+            ["stripe", "npm:11.8.0"],\
+            ["@types/node", "npm:18.11.18"],\
+            ["qs", "npm:6.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8154,6 +8197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:17.0.1"],\
             ["react-redux", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:7.2.9"],\
             ["react-responsive-carousel", "npm:3.2.23"],\
+            ["stripe", "npm:11.8.0"],\
             ["tailwindcss", "virtual:6a6c17277c15d7fa1f64a4c761ba2e04c98b6483e8bec3db5375848ff5abd26fdba5ed6290e062cb9cbcd2f43db1fbce5d879571c55cadefb40ab4e09c8516f6#npm:2.2.19"]\
           ],\
           "linkType": "SOFT"\
